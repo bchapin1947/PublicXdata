@@ -1,2 +1,2 @@
 # PublicXdata
-XDadata course learning repository
+XDdata course learning repository
