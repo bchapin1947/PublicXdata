@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/07/29 03:11:20.837,D:\xDataCourse\XdataCpourseGrp.groupproj=D:\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2024/07/29 03:11:33.384,D:\xDataCourse\XdataCourseGrp.groupproj=D:\xDataCourse\XdataCpourseGrp.groupproj</Transaction>
+  </Transactions>
+  <Default.Personality>
+    <Projects ActiveProject="D:\xDataCourse\Server\XServerTemplate.dproj"/>
+  </Default.Personality>
+</BorlandProject>

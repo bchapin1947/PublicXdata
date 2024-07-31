@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F2A9B6D0-6EBB-414D-9665-9DDD1D2AE1B3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Server\XServerTemplate.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="XServerTemplate">
+        <MSBuild Projects="Server\XServerTemplate.dproj"/>
+    </Target>
+    <Target Name="XServerTemplate:Clean">
+        <MSBuild Projects="Server\XServerTemplate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XServerTemplate:Make">
+        <MSBuild Projects="Server\XServerTemplate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="XServerTemplate"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="XServerTemplate:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="XServerTemplate:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
